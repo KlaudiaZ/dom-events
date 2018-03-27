@@ -1,135 +1,143 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Dom Events Playground</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .content-vertical {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .content-center {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .huge-item {
-    flex: 100%;
-  }
-  .md-item {
-    flex: 2 0 25%;
-  }
-
-  .md-item {
-    flex: 1 0 10%;
-  }
-  .bg-item {
-    flex: 4 0 50%;
-  }
-
-  .orange {
-    background-color: orange;
-  }
-
-  .red {
-    background-color: red;
-  }
-  .blue {
-    background-color: blue;
-  }
-  .green {
-    background-color: green;
-  }
-  .grey {
-    background-color: grey;
-  }
-
-  #orange-div {
-    height: 200px;
-  }
-
-  form {
-    padding:10px;
-    border: 2px dashed;
-    border-radius: 3px;
-  }
-  form label {
-    padding: 10px;
-  }
-
-  .bordered {
-    border: 2px solid black;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  .bg-button {
-    padding: 20px;
-  }
-
-  .with-padding {
-    padding: 10px;
-  }
-
-  .hight {
-    height: 200px;
-  }
-  </style>
-  <script src='./playground.js' ></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dom Events Playground</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .content-vertical {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .content-center {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .huge-item {
+            flex: 100%;
+        }
+        
+        .md-item {
+            flex: 2 0 25%;
+        }
+        
+        .md-item {
+            flex: 1 0 10%;
+        }
+        
+        .bg-item {
+            flex: 4 0 50%;
+        }
+        
+        .orange {
+            background-color: orange;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .grey {
+            background-color: grey;
+        }
+        
+        #orange-div {
+            height: 200px;
+        }
+        
+        form {
+            padding: 10px;
+            border: 2px dashed;
+            border-radius: 3px;
+        }
+        
+        form label {
+            padding: 10px;
+        }
+        
+        .bordered {
+            border: 2px solid black;
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        
+        .bg-button {
+            padding: 20px;
+        }
+        
+        .with-padding {
+            padding: 10px;
+        }
+        
+        .hight {
+            height: 200px;
+        }
+    </style>
+    <script src='./playground.js'></script>
 </head>
+
 <body>
-  <div class='content'>
-    <div class='md-item grey content-vertical'>
-      <button id='button-a'>Button A</button>
-      <button id='button-b'>Button B</button>
-      <button id='button-c'>Button C</button>
-      <div>Text in Div</div>
-      <div class='with-padding red'>
-        <div class='with-padding blue content-center'>
-          <button class='bg-button'>The Button</button>
+    <div class='content'>
+        <div class='md-item grey content-vertical'>
+            <button id='button-a'>Button A</button>
+            <button id='button-b'>Button B</button>
+            <button id='button-c'>Button C</button>
+            <div>Text in Div</div>
+            <div class='with-padding red'>
+                <div class='with-padding blue content-center'>
+                    <button class='bg-button'>The Button</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class='bg-item orange content-center' id='orange-div'>
-      <button>Click me</button>
-      <a href='http://google.com'>I am link</a>
-    </div>
-    <div class='md-item content-vertical'>
-      <div class='red md-item'></div>
-      <div class='blue md-item'></div>
-      <div class='green md-item'></div>
-    </div>
-    <div class='huge-item content'>
-      <form class='content-vertical' id='user-form'>
-        <label>
+        <div class='bg-item orange content-center' id='orange-div'>
+            <button>Click me</button>
+            <a href='http://google.com'>I am link</a>
+        </div>
+        <div class='md-item content-vertical'>
+            <div class='red md-item'></div>
+            <div class='blue md-item'></div>
+            <div class='green md-item'></div>
+        </div>
+        <div class='huge-item content'>
+            <form class='content-vertical' id='user-form'>
+                <label>
           Name
           <input name='name' type='text'/>
         </label>
-        <label>
+                <label>
           Lastname
           <input name='lastname' type='text'/>
         </label>
-        <label>
+                <label>
           Age
           <input name='age' type='number'/>
         </label>
-        <label>
+                <label>
           Accept Regulations
           <input name='reg1' type='checkbox'/>
         </label>
-        <label>
+                <label>
           Country
           <select name='country'>
             <option value="pl">Poland</option>
@@ -137,10 +145,10 @@
             <option value='fr'>France</option>
           </select>
         </label>
-        <button>Save</button>
-      </form>
-      <form class='content-vertical' id='car-form'>
-          <label>
+                <button>Save</button>
+            </form>
+            <form class='content-vertical' id='car-form'>
+                <label>
             Car brand
             <select name='car'>
               <option value="audi">Audi</option>
@@ -148,23 +156,23 @@
               <option value='citroen'>Citroen</option>
             </select>
           </label>
-          <label>
+                <label>
             Car plate number
             <input name='plate' type='text'/>
           </label>
-          <label>
+                <label>
             Car weight
             <input name='weight' type='number'/>
           </label>
-          <label>
+                <label>
             Accept Regulations (1)
             <input name='reg-car-1' type='checkbox'/>
           </label>
-          <label>
+                <label>
             Accept Regulations (2)
             <input name='reg-car-2' type='checkbox'/>
           </label>
-          <label>
+                <label>
             Country
             <select name='country-car'>
               <option value="pl">Poland</option>
@@ -172,10 +180,10 @@
               <option value='fr'>France</option>
             </select>
           </label>
-          <button>Save</button>
-        </form>
-        <form class='content-vertical' id='product-form'>
-            <label>
+                <button>Save</button>
+            </form>
+            <form class='content-vertical' id='product-form'>
+                <label>
               Product type
               <select name='product'>
                 <option value="sweets">Sweets</option>
@@ -183,11 +191,11 @@
                 <option value='vegetables'>Vegetables</option>
               </select>
             </label>
-            <label>
+                <label>
                 How much
                 <input name='how-much' type='range' min="0" max="1000"/>
             </label>
-            <label>
+                <label>
               Transport option
               <select name='transport'>
                 <option value="dhl">DHL</option>
@@ -195,58 +203,89 @@
                 <option value='poczta'>Poczta Polska</option>
               </select>
             </label>
-            <label>
+                <label>
               Company
               <input name='company' type='text'/>
             </label>
-            <label>
+                <label>
               Street
               <input name='street' type='text'/>
             </label>
-            <label>
+                <label>
                 Vat-id
                 <input name='vat-id' type='text'/>
             </label>
-            <button>Save</button>
-          </form>
-          <div class='md-item content bordered'> 
+                <button>Save</button>
+            </form>
+            <div class='md-item content bordered'>
 
-          </div>
+            </div>
+        </div>
+        <div class='huge-item content-center'>
+            <div class='md-item bordered'>
+                <h2>1</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>2</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>3</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>4</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>5</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>6</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>7</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>8</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>9</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>10</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>11</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>12</h2>
+            </div>
+            <div class='md-item bordered'>
+                <h2>13</h2>
+            </div>
+        </div>
+        <div class='huge-item content-center'>
+            <button class='sm-item bg-button'>1</button>
+            <button class='sm-item bg-button'>2</button>
+            <button class='sm-item bg-button'>3</button>
+            <button class='sm-item bg-button'>4</button>
+            <button class='sm-item bg-button'>5</button>
+            <button class='sm-item bg-button'>6</button>
+            <button class='sm-item bg-button'>7</button>
+            <button class='sm-item bg-button'>8</button>
+            <button class='sm-item bg-button'>9</button>
+            <button class='sm-item bg-button'>10</button>
+            <button class='sm-item bg-button'>11</button>
+            <button class='sm-item bg-button'>12</button>
+            <button class='sm-item bg-button'>13</button>
+        </div>
+        <div>
+            <label for="user-name">Username:</label>
+            <input type="text" name="user-name" id="user-name">
+        </div>
+        <div class='huge-item content hight'>
+            <textarea class='md-item'></textarea>
+            <div class='md-item bordered'></div>
+        </div>
     </div>
-    <div class='huge-item content-center'>
-      <div class='md-item bordered'><h2>1</h2></div>
-      <div class='md-item bordered'><h2>2</h2></div>
-      <div class='md-item bordered'><h2>3</h2></div>
-      <div class='md-item bordered'><h2>4</h2></div>
-      <div class='md-item bordered'><h2>5</h2></div>
-      <div class='md-item bordered'><h2>6</h2></div>
-      <div class='md-item bordered'><h2>7</h2></div>
-      <div class='md-item bordered'><h2>8</h2></div>
-      <div class='md-item bordered'><h2>9</h2></div>
-      <div class='md-item bordered'><h2>10</h2></div>
-      <div class='md-item bordered'><h2>11</h2></div>
-      <div class='md-item bordered'><h2>12</h2></div>
-      <div class='md-item bordered'><h2>13</h2></div>
-    </div>
-    <div class='huge-item content-center'>
-      <button class='sm-item bg-button'>1</button>
-      <button class='sm-item bg-button'>2</button>
-      <button class='sm-item bg-button'>3</button>
-      <button class='sm-item bg-button'>4</button>
-      <button class='sm-item bg-button'>5</button>
-      <button class='sm-item bg-button'>6</button>
-      <button class='sm-item bg-button'>7</button>
-      <button class='sm-item bg-button'>8</button>
-      <button class='sm-item bg-button'>9</button>
-      <button class='sm-item bg-button'>10</button>
-      <button class='sm-item bg-button'>11</button>
-      <button class='sm-item bg-button'>12</button>
-      <button class='sm-item bg-button'>13</button>
-    </div>
-    <div class='huge-item content hight'>
-      <textarea  class='md-item'></textarea>
-      <div class='md-item bordered'></div>
-    </div>
-  </div>
 </body>
+
 </html>
